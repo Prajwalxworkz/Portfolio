@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <!-- ------------------header------------------------ -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="images/logo.jpg" alt="" class="logo"> -->
+             <h1 class="sub-title"><span style="color: red;">P</span><span>RAJWAL</span><span style="color: red;">.</span></h1>
+            <ul id="sideMenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="bi bi-x-circle-fill" onclick="closeMenu()"></i>
+            </ul>
+            <i class="bi bi-list" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Prajwal</span><br>K M From India</h1>
+        </div>
+    </div>
+    
+</div>
+    <!-- ------------------about me------------------------ -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/backgroundImg.JPG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, my name is Prajwal K M. I belong to Hassan. I am a passionate and detail-oriented software developer with a Bachelor's degree in Engineering from Siddaganga Institute of Technology, Tumkuru.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skill</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                       <ul>
+                        <li><span>Programming Languages</span><br>Java, SQL</li>
+                        <li><span>Web Technologies</span><br>HTML, CSS, Java script</li>
+                        <li><span>Framework</span><br>Bootstrap, JPA, Hibernate,<br> Spring framework, Spring MVC</li>
+                        <li><span>APIs</span><br>Java Database Connectivity (JDBC), Java Servlet API,<br> Java Server Pages (JSP)</li>   
+                       </ul>  
+                    </div>
+                    <div class="tab-contents" id="education">
+                       <ul>
+                        <li><span>2020 - 2024</span><br>B.E from Siddaganga Institute of Technology, Tumkur <br>CGPA: 8.77</li>
+                        <li><span>2019</span><br>PUC from Masters PU College <br>Percentage: 95.66</li>
+                        <li><span>2017</span><br>SSLC from United High School<br>Percentage: 96.96</li>
+                       </ul>  
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Aug 2024 - Mar 2025</span><br>Internship at Xworkz Institute</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- ------------------projects------------------------ -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/coffee.webp" alt="">
+                    <div class="layer">
+                        <h3>Coffee Leaf Disease Detection</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quaerat fugiat rerum corporis veniam praesentium voluptatum porro quisquam ad? Facilis.</p>
+                        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/fingerVein.webp" alt="">
+                    <div class="layer">
+                        <h3>Finger Vein Recognition System</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quaerat fugiat rerum corporis veniam praesentium voluptatum porro quisquam ad? Facilis.</p>
+                        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/commonModules.webp" alt="">
+                    <div class="layer">
+                        <h3>Common Modules</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quaerat fugiat rerum corporis veniam praesentium voluptatum porro quisquam ad? Facilis.</p>
+                        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Prajwalxworkz" class="btn">See more</a>
+        </div>
+     </div>
+     <!-- --------------------------contact-------------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="bi bi-send"></i>
+                        prajwalkm0707@gmail.com</p>
+                    <p><i class="bi bi-telephone"></i>+91 7019592866</p>
+                    <div class="social-media-icons">
+                        <!-- <a href="#"><i class="bi bi-facebook"></i></a> -->
+                        <a href="https://github.com/Prajwalxworkz"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/prajwalkm07"><i class="bi bi-linkedin"></i></a>
+                        <a href=""><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                    <a href="images/Prajwal_KM_Resume.pdf" download class="btn btn2">Download resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" id="" placeholder="Your name" required>
+                        <input type="email" name="email" id="" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="bi bi-c-circle"></i> 2025, All Right Reserved</p>
+        </div>
+      </div>
+
+
+
+
+
+
+    <script>
+        var tabLinks=document.getElementsByClassName("tab-links");
+        var tabContents=document.getElementsByClassName("tab-contents");
+
+        function openTab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link");
+            }
+
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sideMenu=document.getElementById("sideMenu");
+
+        function openMenu(){
+            sideMenu.style.right="0";
+        }
+        function closeMenu(){
+            sideMenu.style.right="-200px";
+        }
+
+    </script>
+</body>
+</html>
